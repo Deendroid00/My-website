@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title> My Shop</title>
+    
+    <style>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    @media (max-width: 600px) {
+  
+  .products {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+}
+    
+    /* FLEXBOX */
+      .products { 
+        display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 20px;
+      flex-wrap: wrap;
+      }
+      
+      /* CARD */
+      .card {
+        text-align: center;
+        background: white;
+        font-family: Arial;
+        border-radius:15px;
+        padding: 15px;
+        width: 200px;
+      }
+      
+      .card img {
+        width:100%;
+        border-radius:10px;
+         }
+      
+      body {
+        background: #FFEDCE;
+        font-family: arial;
+        padding: 20px;
+      }
+      
+      button {
+        background:green;
+        border-radius:10px;
+        color:white;
+        text-align: center;
+        padding:10px;
+        font-family: Arial;
+        cursor:pointer;
+         }
+         
+         .card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+.card h2 {
+  margin: 10px 0 5px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+      
+    </style>
+  </head>
+  
+  <body>
+    
+    <h1 style="margin-bottom:10px">PowerSure Solar, Reliant Energy Supply, SteadySun Solutions</h1>
+    
+    <p style="margin-bottom:20px"> Lower your operating costs and secure reliable power with solar solutions built for your business. Whether you need high-efficiency panels for large-scale installations, durable inverters for seamless energy conversion, or solar-powered ventilation for off-grid and remote operations, you get equipment engineered for performance and longevity. Your projects stay on schedule with consistent product availability, competitive bulk pricing, and technical support that keeps your teams moving. The result? Reduced energy overhead, stronger margins, and a competitive edge in a market that increasingly demands sustainability. </p>
+    
+    <div class="products" >
+      
+      <div class="card">
+        <img src="https://i.postimg.cc/W3VT0j2H/Mercury-3-5k-VA-Solar-Hybrid-Inverter-with-5k-Wh-Lithium-Battery-8x-450W-Mono-Panels.png">
+        <h2>Hybrid inverter</h2>
+        <p> Mercury 3.5kVA Solar Hybrid Inverter with 5kWh Lithium....</p>
+        <h3>#3,400,000</h3>
+        <button onclick="this.innerText= 'Added!'">Add to cart</button>
+      </div>
+      
+      <div class="card">
+        <img src="https://i.postimg.cc/FRwq0Vgh/images-(14).jpg">
+        <h2> Solar fan</h2>
+        <h3>#150,000</h3>
+        <button onclick="this.innerText= 'Added!'">Add to cart</button>
+      </div>
+      
+      <div class="card">
+        <img src="https://i.postimg.cc/vTdhQqt2/africell-300w-solar-panel.png">
+        <h2> Mono solar panel</h2>
+        <p>Africell solar panel 330w</p>
+        <h3> #500,000</h3>
+        <button onclick="this.innerText= 'Added!'">Add to cart</button>
+      </div>
+      
+      </div>
+      
+  </body>
+  </html>
+  
