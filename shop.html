@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+    <html>
+      <head>
+        <title>My Shop</title>
+        
+        <meta name="viewport" content="width=device-width
+        initial-scal=1.0">
+        
+        <style>
+        /* GENERAL */
+        body {
+          background: #E8EDF2;
+          margin: 0;
+          padding: 0;
+          text-align: center;
+        }
+        
+        /* NAVBAR */
+        .navbar {
+          background: #7F2020;
+          border-radius: 0;
+          text-align: center;
+          font-weight: bold;
+          font-family: Arial;
+          padding: 15px;
+        }
+        
+        .navbar a {
+          color: white;
+          padding: 10px;
+        }
+        
+        /* PRODUCTS (FLEXBOX) */
+        .products {
+          display: flex;
+          gap: 20px;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+        
+        html {
+          scroll-behavior: smooth;
+        }
+        
+        /* SECTION */
+        section {
+          margin: 20px;
+        }
+        
+        /* CARD */
+        .card {
+          background: #7F2020;
+          border-radius: 15px;
+          text-align: center;
+          font-family: Arial;
+          color: white;
+          padding: 15px;
+          width: 250px;
+        }
+        
+        .card img {
+          width: 100%;
+          height: auto;
+        }
+        
+        /* HEADING */
+        h1, h2 {
+          background: #7F2020;
+          border-radius: 15px;
+          color: white;
+          margin: 15px;
+          padding: 5px;
+        }
+        
+        p {
+          color: purple;
+          padding: 10px;
+          margin: 10px;
+          font-family: Arial;
+        }
+        
+        .card:hover {
+          transform: translateY(-5px);
+        }
+        
+        .S {
+          font-style: italic;
+          font-weight: bold;
+        }
+        
+        .form {
+          font-weight: bold;
+          font-family: Georgia;
+          margin-bottom: 50px;
+        }
+        
+        form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+        </style>
+          
+          </head>
+          
+      <body>
+        
+        <!--NAVBAR-->
+           <div class="navbar">
+             <a href="#home">HOME</a>
+             <a href="#about">ABOUT</a>
+             <a href="#product">PRODUCTS</a>
+             <a href="#form">ORDER NOW</a>
+             </div>
+             
+             <!--HEADING-->
+             <section id="home">
+               <h1>HAJIYA JALABIYA STORE</h1>
+               <p>
+                 Your customers walk in and immediately feel the difference—every piece in your collection speaks to elegance and comfort.
+      From <span class="S">jalabiyas to shoes, bags, and wrappers,</span> your products deliver style, confidence, and cultural pride.
+               </p>
+               </section>
+               
+            <!--ABOUT-->
+             <section id="about">
+               <h2>ABOUT US</h2>
+               <P>
+                 We believe everyone deserves fashion that blends tradition with modern elegance.
+      Our collection is carefully selected to ensure <span class="S">quality, durability, and customer satisfaction.</span>
+      When you partner with us, you gain reliable products that keep your business growing.
+               </P>
+            </section>
+            
+            <!--PRODUCTS-->
+            <section id="product">
+              <h2>WHAT YOU CAN GET</h2>
+                 
+                 <div class="products">
+                   
+              <div class="card">
+                <img src="https://i.postimg.cc/FR8rPcr3/IMG-20260505-WA0076.jpg">
+                <h3>NGN 45,000.00</h3>
+              </div>
+              
+            <div class="card">
+              <img src="https://i.postimg.cc/kXD3pDV1/IMG-20260505-WA0071.jpg">
+              <h3>NGN 45,000.00</h3>
+            </div>
+            
+            <div class="card">
+              <img src="https://i.postimg.cc/QNkwYhYm/IMG-20260505-WA0070.jpg">
+              <h3>NGN 45,000.00</h3>
+            </div>
+            
+            <div class="card">
+              <img src="https://i.postimg.cc/RVwqP6mw/IMG-20260505-WA0072.jpg">
+              <h3>NGN 45,000.00</h3>
+              </div>
+              
+              <div class="card">
+                <img src="https://i.postimg.cc/YCscYRPP/IMG-20260505-WA0077.jpg">
+                <h3>NGN 15,000.00</h3>
+              </div>
+              
+              <div class="card">
+                <img src="https://i.postimg.cc/tTz2tCTt/IMG-20260505-WA0075.jpg">
+                <h3>NGN 18,000.00</h3>
+              </div>
+              
+              <div class="card">
+                <img src="https://i.postimg.cc/28LnCSD7/IMG-20260505-WA0080.jpg">
+                <h3>NGN 25,000.00</h3>
+                <strong>NB: Shoe and purse not included!</strong>
+              </div>
+              
+              <div class="card">
+                <img src="https://i.postimg.cc/d1XDfGDX/IMG-20260505-WA0079.jpg">
+                <h3>NGN 25,000.00</h3>
+                <strong>NB: Shoe and purse not included!</strong>
+              </div>
+              
+              <div class="card">
+                <img src="https://i.postimg.cc/2yhnmCbR/IMG-20260505-WA0078.jpg">
+                <h3>NGN 25,000.00</h3>
+                <strong>NB: Shoe and purse not included!</strong>
+              </div>
+              
+          </div>
+             </section>
+             
+             <!--FORM-->
+             <section class="form" id="form">
+               <h3>FILL THE FORM BELOW TO ORDER</h3>
+               
+               <form action="success.html">
+                 <label for="name">Full name:</label>
+                 <input type="text" id="name">
+            <!--REQUIRE USER TO ENTER A VALID EMAIL-->
+                 <label for="em">Email:</label>
+                 <input type="email" id="em">
+                 <!--PREFFERED ORDER-->
+                 <label for="choice">Preffered order</label>
+                 <select name="product" id="choice">
+                 <option value="jalabiya">Jalabiya</option>
+                 <option value="shoes">Shoes</option>
+                 <option value="bag">Bag</option>
+                 </select>
+                 <!--QUANTITIES-->
+                 <label for="choose">Quantities:</label>
+                 <select name="quantities" id="choose">
+                   <option value="1" >1</option>
+                   <option value="2">2</option>
+                   <option value="3">3</option>
+                   <option value="wholesale">Wholesale</option>
+                   </select>
+        <!--REQUIRE USER TO ENTER A VALID CONTACT-->
+            <label for="number">Phone Number:</label>
+            <input type="text" id="number">
+            <!--REQUIRE USER TO SUBMIT-->
+            <button type="submit">Submit</button>
+            </form>
+            
+            </section>
+            
+            
+            </body>
+            </html>
