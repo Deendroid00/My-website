@@ -1,0 +1,268 @@
+ <!DOCTYPE html>
+ <html lang="en">
+   <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>PERFUME STORE</title>
+     
+     <style>
+     /* GENERAL */
+     body {
+       background-color: #f5f5f5;
+       margin: 0;
+     }
+     
+     html {
+       scroll-behavior: smooth;
+     }
+     
+     .container {
+       display: flex;
+     }
+     
+     /* SIDEBAR */
+     .sidebar {
+      background-color: green;
+      height: auto;
+      width: 150px;
+      padding: 1rem;
+     }
+     
+     .sidebar a {
+       display: block;
+       padding: 15px;
+       background-color: #222;
+       margin: 20px;
+       border-radius: 10px;
+       color: white;
+       font-weight: bold;
+       text-align: center;
+     }
+     
+     /* MAIN-CONTENT */
+     .hero {
+       text-align: center;
+       font-family: Georgia;
+       font-size: large;
+       margin: 50px;
+       padding: 10px;
+     }
+     
+     .hero p {
+       margin-bottom: 50px;
+     }
+     
+     .hero img {
+       width: 100%;
+       max-width: 700px;
+     }
+     
+     .hero button {
+       background-color: green;
+       padding: 20px;
+       margin: 15px;
+       border: none;
+       border-radius: 10px;
+       color: white;
+     }
+     
+     /* PRODUCT-CARD */
+     .product-card {
+       display:flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       gap: 20px;
+     }
+     
+     .product-card p, .product-card h3 {
+       text-align: left;
+       font-size: medium;
+       font-weight: bold;
+     }
+     
+     .product-card button {
+       color: white;
+       width: 120px;
+     }
+     
+     #green {
+       background-color: green;
+       border: none;
+       padding: 10px;
+       margin: 10px;
+     }
+     
+     #red {
+       background-color: red;
+       border: none;
+       padding: 10px;
+       margin-bottom: 30px;
+     }
+     .gallery {
+       display: flex;
+       overflow-x: auto;
+       gap: 20px;
+       background-color: white;
+       width: 100%;
+       max-width: 400px;
+       border-radius: 20px;
+     }
+     
+     .gallery img {
+       width: 100%;
+       border-radius: 10px;
+       margin: auto;
+     }
+     
+     /* FOOTER */
+     footer {
+       text-align: center;
+       padding: 20px;
+       font-size: large;
+       margin: 30px;
+     }
+     
+     .gallery:hover {
+       transform: translateY(-5px);
+     }
+     
+     .about {
+       margin-bottom: 60px;
+     }
+     
+     #bold {
+       font-weight: bold;
+     }
+     
+     /* FORM */
+     form {
+       display: flex;
+       flex-direction: column;
+     }
+     
+     .form label {
+       font-weight: bold;
+     }
+     
+     #w {
+       color: white;
+     }
+     
+     .form {
+       border: solid;
+       margin: 100px;
+     }
+     
+     #name, #em, #order, #quan, #tel {
+       border: outset;
+     }
+     
+     </style>
+   </head>
+   
+   <body>
+     
+     <!--SIDEBAR-->
+     
+     <div class="container">
+       
+       <aside class="sidebar">
+       <h2>L'or De Perfume</h2>
+         <a href="#">HOME</a>
+         <a href="#about">ABOUT</a>
+         <a href="#product">PRODUCTS</a>
+       </aside>
+       
+       <!--MAIN-CONTENT-->
+       <main class="main-content">
+         
+         <section class="hero">
+         <h1>L'or De Perfume</h1>
+         <p>L'or De perfume sells curated, long-lasting fragrances for people who want a scent that stands out and evolves—no generic department store options, just quality perfumes described in plain terms.</p>
+         <img src="https://i.postimg.cc/bvfvwF28/20260512-114037.jpg">
+         <button>ExploreMore</button>
+         </section>
+         
+         <!--PRODUCTS-CARD-->
+         
+         <section class="product-card" id='product'>
+           <div class="gallery">
+             <img src="https://i.postimg.cc/rwnvhdMG/3516642515316-franck-olivier-franck-olivier-oud-paradise-edp-100-ml-100-ml-ls-1.jpg">
+             <img src="https://i.postimg.cc/L5p7qL3q/3516642515316-franck-olivier-franck-olivier-oud-paradise-edp-100-ml-100-ml-fd.png">
+             <img src="https://i.postimg.cc/W13yJ20R/3516642515316-franck-olivier-franck-olivier-oud-paradise-edp-100-ml-100-ml-ls-3.jpg">
+             </div>
+             <p>FRANCK OLIVIER Parisian Oud EDP 100ml</p>
+             <h3>$55</h3>
+             <button id="green" onclick="this.innerText= 'Added!'"><u>Add to cart</u></button>
+             <button id="red"><a href="#fill" id="w">Buy Now</a></button>
+           </section>
+           
+           <section class="product-card">
+           <div class="gallery">
+             <img src="https://i.postimg.cc/9FSdJVsd/Screenshot2025-07-03at16-32-55.png">
+             <img src="https://i.postimg.cc/KYhnhfGv/MAGNETICROSE.jpg">
+             </div>
+             <p>FRANCK OLIVIER Magnetic Rose Le Parfum 100ml</p>
+             <h3>$60</h3>
+             <button id="green" onclick="this.innerText= 'Added!'"><u>Add to cart</u></button>
+             <button id="red"><a href="#fill" id="w">Buy Now</a></button>
+             </section>
+             
+           <section class="product-card">
+           <div class="gallery">
+             <img src="https://i.postimg.cc/FKG1CV7s/Screenshot2025-06-23at13-21-49-ffffe5b5-7df6-450f-9648-c874a9969afb.png">
+             <img src="https://i.postimg.cc/Hn8xxG35/Parisian-Oud-Franck-Olivier.jpg">
+             <img src="https://i.postimg.cc/G36PjdW5/Collection-NICHE-70cba464-bbcd-473e-b492-17dc28730387.jpg">
+             </div>
+             <p>FRANCK OLIVIER Parisian Oud EDP 100ml</p>
+             <h3>$70</h3>
+             <button id="green" onclick="this.innerText='Added!'"><u>Add to cart</u></button>
+             <button id="red"><a href="#fill" id="w">Buy Now</a></button>
+         </section>
+       </main>
+       </div>
+       <!--FOOTER-->
+       <footer>
+         
+         <section class="about" id="about">
+           <!--ABOUT US-->
+           <h3>About L'or De Perfume</h3>
+           <p>We started <span id="bold">L'or De Perfume</span> with a simple belief: <span id="S">the best fragrances shouldn't require a trust fund or a decoder ring to find.</span></p>
+           
+           <p>Too often, great scent is locked behind intimidating counters, buried in jargon, or watered down until it barely whispers. We wanted something different—a place where exceptional perfume feels approachable, not exclusive.</p>
+           
+           <p>Every bottle we carry is <span id="bold">chosen</span> because it actually performs. We wear them ourselves, test them through full days and real moments, and only keep what earns its place. Rich, layered, long-lasting—the kind of scent that makes someone lean in closer.</p>
+           
+           <p>We describe them plainly <span id="bold">because</span> <span id="S">you deserve to know what you're buying.</span> No pretension. No overwhelm. Just gold-standard fragrance, honestly offered.</p>
+         </section>
+         
+         <!--FORM-->
+         <section class="form" id="fill">
+           <h3>FILL IN THE FORM TO BUY NOW!</h3>
+           <form action="success.html">
+             <label for="name">NAME:</label><br>
+             <input type="text" id="name"><br>
+             <label for="em">EMAIL:</label><br>
+             <input type="email" id="em"><br>
+             <label for="order">PREFFERED ORDER:</label><br>
+             <select name="perfume" id="order"><br>
+               <option placeholder="perisian">perisian Oud</option>
+               <option placeholder="magnetic rose">magnetic Rose</option>
+               <option placeholder="paradise">Oud paradise</option>
+             </select>
+             <label for="quan">Quantity</label><br>
+             <select id="quan"><br>
+               <option placeholder="one">1</option>
+               <option placeholder="two">2</option>
+               <option placeholder="three">3</option>
+             </select>
+             <label for ="tel">CONTACT:</label><br>
+             <input type="text" id="tel"><br>
+             <input type="Submit"><br>
+           </form>
+         </section>
+         <p>© 2026 L'or De Perfume. All rights reserved.</p>
+       </footer>
+   </body>
+   <html>
